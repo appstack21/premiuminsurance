@@ -1,0 +1,11 @@
+framework module PremiumInsurance {
+  umbrella header "PremiumInsurance.h"
+
+  export *
+  module * { export * }
+}
+
+module PremiumInsurance.Swift {
+    header "PremiumInsurance-Swift.h"
+    requires objc
+}

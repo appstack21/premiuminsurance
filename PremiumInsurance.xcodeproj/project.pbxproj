@@ -11,6 +11,9 @@
 		99A913A2274A3AF8007A0069 /* PremiumInsurance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A91397274A3AF8007A0069 /* PremiumInsurance.framework */; };
 		99A913A7274A3AF8007A0069 /* PremiumInsuranceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A913A6274A3AF8007A0069 /* PremiumInsuranceTests.swift */; };
 		99A913A8274A3AF8007A0069 /* PremiumInsurance.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A9139A274A3AF8007A0069 /* PremiumInsurance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99A913B4274A3C81007A0069 /* InsuranceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A913B2274A3C81007A0069 /* InsuranceListViewController.swift */; };
+		99A913B5274A3C81007A0069 /* InsuranceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A913B3274A3C81007A0069 /* InsuranceListViewController.xib */; };
+		99A913B7274A3C90007A0069 /* IPInsuranceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A913B6274A3C90007A0069 /* IPInsuranceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		99A9139B274A3AF8007A0069 /* PremiumInsurance.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PremiumInsurance.docc; sourceTree = "<group>"; };
 		99A913A1274A3AF8007A0069 /* PremiumInsuranceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PremiumInsuranceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A913A6274A3AF8007A0069 /* PremiumInsuranceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumInsuranceTests.swift; sourceTree = "<group>"; };
+		99A913B2274A3C81007A0069 /* InsuranceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceListViewController.swift; sourceTree = "<group>"; };
+		99A913B3274A3C81007A0069 /* InsuranceListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsuranceListViewController.xib; sourceTree = "<group>"; };
+		99A913B6274A3C90007A0069 /* IPInsuranceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPInsuranceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 		99A91399274A3AF8007A0069 /* PremiumInsurance */ = {
 			isa = PBXGroup;
 			children = (
+				99A913B6274A3C90007A0069 /* IPInsuranceManager.swift */,
+				99A913B1274A3C81007A0069 /* Scenes */,
 				99A9139A274A3AF8007A0069 /* PremiumInsurance.h */,
 				99A9139B274A3AF8007A0069 /* PremiumInsurance.docc */,
 			);
@@ -83,6 +91,15 @@
 				99A913A6274A3AF8007A0069 /* PremiumInsuranceTests.swift */,
 			);
 			path = PremiumInsuranceTests;
+			sourceTree = "<group>";
+		};
+		99A913B1274A3C81007A0069 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				99A913B2274A3C81007A0069 /* InsuranceListViewController.swift */,
+				99A913B3274A3C81007A0069 /* InsuranceListViewController.xib */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A913B5274A3C81007A0069 /* InsuranceListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A913B7274A3C90007A0069 /* IPInsuranceManager.swift in Sources */,
 				99A9139C274A3AF8007A0069 /* PremiumInsurance.docc in Sources */,
+				99A913B4274A3C81007A0069 /* InsuranceListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +362,7 @@
 		99A913AC274A3AF8007A0069 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -370,6 +391,7 @@
 		99A913AD274A3AF8007A0069 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -398,6 +420,7 @@
 		99A913AF274A3AF8007A0069 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z87722F955;
@@ -419,6 +442,7 @@
 		99A913B0274A3AF8007A0069 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z87722F955;
