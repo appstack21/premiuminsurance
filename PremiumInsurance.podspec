@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios
     
-    s.source            = { :git => 'https://github.com/appstack21/premiuminsurance.git', :tag => s.version }
+    s.source            = { :git => 'https://github.com/appstack21/premiuminsurance.git' }
     s.ios.deployment_target = '15.0'
     s.ios.vendored_frameworks = 'PremiumInsurance.xcframework'
 end
